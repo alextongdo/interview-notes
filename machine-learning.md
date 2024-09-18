@@ -9,4 +9,16 @@
 - The top k nearest neighbors are determined by a chosen distance metric: Euclidean, Manhattan, Minknowski.
 - Can also perform regression by averaging the target values obtained from top k nearest neighbors.
 
+## K-Means Clusterings
+
+## Linear Regression
+- Fits a linear model for dependent variable $y$ and potentially multiple independent variables $x_1, x_2, x_3, x_n, ...$
+$$y=\begin{bmatrix}
+x_{1}\\
+x_{2}\\
+x_{3}
+\end{bmatrix}\begin{bmatrix}
+w_{1} & w_{2} & w_{3}
+\end{bmatrix} +b$$
+
 ## Transformers
