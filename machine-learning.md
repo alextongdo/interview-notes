@@ -56,7 +56,8 @@ w_{1} & w_{2} & w_{3}
 - **Dropout**
 
 ## Support Vector Machine (SVM)
-![Visualization](https://miro.medium.com/v2/resize:fit:1400/1*ZpkLQf2FNfzfH4HXeMw4MQ.png)
+<img src="https://miro.medium.com/v2/resize:fit:1400/1*ZpkLQf2FNfzfH4HXeMw4MQ.png" height="200">
+
 - Uses labeled points in an $n$-dimensional feature space to find a hyperplane or classification boundary that maximizes the margin to the closest points of each class.
 
 ![Visualization](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*mCwnu5kXot6buL7jeIafqQ.png)
