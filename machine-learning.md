@@ -8,8 +8,6 @@
 - The top k nearest neighbors are determined by a chosen distance metric: Euclidean, Manhattan, Minknowski.
 - Can also perform regression by averaging the target values obtained from top k nearest neighbors.
 
-## K-Means Clustering
-
 ## Linear Regression
 - Fits a linear model for dependent variable $y$ and potentially multiple independent variables $x_1, x_2, x_3, ...$
 ```math
@@ -67,6 +65,15 @@ w_{1} & w_{2} & w_{3}
 - In the above picture, each point on a flat surface was mapped onto a curved surface. $\phi(x,y)=x^2+y^2$
 - The **kernel trick** allows you to bypass the need for specifying this nonlinear transformation explicitly. Instead, you specify a "kernel"  function that directly describes how each points relate to each other.
   - This works because SVM only needs the dot product between two transformed points $\phi(x_1,y_1)\cdot\phi(x_2,y_2)$ and not each individual transformed $\phi(x,y)$.
+
+## K-Means Clustering
+
+<img src="https://stanford.edu/~cpiech/cs221/img/kmeansViz.png" height="300">
+
+- Given a set of unlabeled points in feature space, we want to find clusters where the points of each cluster are similar.
+- Initially, we pick $k$ points as centroids (centers of the cluster). Then we form $k$ clusters by assigning each point to its nearest centroid. Then we update the centroids by taking the mean of all points in each cluster. Repeat until convergence.
+- Note that initial centroids matters significantly, so it is common practice to run K-Means++ multiple times to get the best convergence.
+- Can also apply **kernel trick** if desired clusters are not initally linearly seperable.
 
 
 
