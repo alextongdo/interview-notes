@@ -55,5 +55,16 @@ w_{1} & w_{2} & w_{3}
 - Lasso regression (**L1 norm**) is when we add a penalty term to the loss that is the absolute value of the magnitude of coefficients.  This results in sparse coefficients.
 - **Dropout**
 
+## Support Vector Machine (SVM)
+![Visualization](https://miro.medium.com/v2/resize:fit:1400/1*ZpkLQf2FNfzfH4HXeMw4MQ.png)
+- Uses labeled points in an $n$-dimensional feature space to find a hyperplane or classification boundary that maximizes the margin to the closest points of each class.
+
+![Visualization](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*mCwnu5kXot6buL7jeIafqQ.png)
+- SVMs can also model a non-linear relationship by performing a non-linear transformation $\phi(x,y)$ of the original features. 
+- In the above picture, each point on a flat surface was mapped onto a curved surface. $\phi(x,y)=x^2+y^2$
+- The **kernel trick** allows you to bypass the need for specifying this nonlinear transformation explicitly. Instead, you specify a "kernel"  function that directly describes how each points relate to each other.
+  - This works because SVM only needs the dot product between two points $\phi(x_1,y_1)\cdot\phi(x_2,y_2)$ and not each individual transformed $\phi(x,y)$.
+
+
 
 ## Transformers
