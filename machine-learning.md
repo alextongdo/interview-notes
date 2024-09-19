@@ -1,8 +1,7 @@
 # Machine Learning Basics
 
 ## K-Nearest Neigbors (KNN)
-
-![Visualization](https://media.geeksforgeeks.org/wp-content/uploads/20231207103856/KNN-Algorithm-(1).png)
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20231207103856/KNN-Algorithm-(1).png" height="300">
 
 - Given a set of labeled data points, when encountering an unlabeled test data point, we can accurately label it by finding its "nearest neighbor" in the points we already know.
 - Consider top k nearest neighbors when labeling, majority vote.
@@ -56,11 +55,12 @@ w_{1} & w_{2} & w_{3}
 - **Dropout**
 
 ## Support Vector Machine (SVM)
-<img src="https://miro.medium.com/v2/resize:fit:1400/1*ZpkLQf2FNfzfH4HXeMw4MQ.png" height="200">
+<img src="https://miro.medium.com/v2/resize:fit:1400/1*ZpkLQf2FNfzfH4HXeMw4MQ.png" height="300">
 
 - Uses labeled points in an $n$-dimensional feature space to find a hyperplane or classification boundary that maximizes the margin to the closest points of each class.
 
-![Visualization](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*mCwnu5kXot6buL7jeIafqQ.png)
+<img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*mCwnu5kXot6buL7jeIafqQ.png" height="300">
+
 - SVMs can also model a non-linear relationship by performing a non-linear transformation $\phi(x,y)$ of the original features. 
 - In the above picture, each point on a flat surface was mapped onto a curved surface. $\phi(x,y)=x^2+y^2$
 - The **kernel trick** allows you to bypass the need for specifying this nonlinear transformation explicitly. Instead, you specify a "kernel"  function that directly describes how each points relate to each other.
