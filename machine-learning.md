@@ -58,13 +58,15 @@ w_{1} & w_{2} & w_{3}
 <img src="https://miro.medium.com/v2/resize:fit:1400/1*ZpkLQf2FNfzfH4HXeMw4MQ.png" height="300">
 
 - Uses labeled points in an $n$-dimensional feature space to find a hyperplane or classification boundary that maximizes the margin to the closest points of each class.
+- Similar to linear classification with $\hat{y}_i=\text{sign}(w^Tx_i-b)$ and classes 1/-1.
+- With a hard constraint $y_i(\hat{y}_i)=y_i(w^Tx_i-b)\geq1$, no points can be on the wrong side of the line. If we want to allow this, we adopt a softer constraint $y_i(w^Tx_i-b)\geq1-\epsilon$.
 
 <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*mCwnu5kXot6buL7jeIafqQ.png" height="300">
 
-- SVMs can also model a non-linear relationship by performing a non-linear transformation $\phi(x,y)$ of the original features. 
+- SVMs can also model a non-linear relationship by performing a non-linear transformation $\phi(x,y)$ of the original features.
 - In the above picture, each point on a flat surface was mapped onto a curved surface. $\phi(x,y)=x^2+y^2$
 - The **kernel trick** allows you to bypass the need for specifying this nonlinear transformation explicitly. Instead, you specify a "kernel"  function that directly describes how each points relate to each other.
-  - This works because SVM only needs the dot product between two points $\phi(x_1,y_1)\cdot\phi(x_2,y_2)$ and not each individual transformed $\phi(x,y)$.
+  - This works because SVM only needs the dot product between two transformed points $\phi(x_1,y_1)\cdot\phi(x_2,y_2)$ and not each individual transformed $\phi(x,y)$.
 
 
 
