@@ -75,6 +75,4 @@ w_{1} & w_{2} & w_{3}
 - Note that initial centroids matters significantly, so it is common practice to run K-Means++ multiple times to get the best convergence.
 - Can also apply **kernel trick** if desired clusters are not initally linearly seperable.
 
-
-
 ## Transformers
