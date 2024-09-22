@@ -75,4 +75,13 @@ w_{1} & w_{2} & w_{3}
 - Note that initial centroids matters significantly, so it is common practice to run K-Means++ multiple times to get the best convergence.
 - Can also apply **kernel trick** if desired clusters are not initally linearly seperable.
 
+## Principal Component Analysis (PCA)
+- The goal with PCA is to reduce high dimensional features into a lower dimension while preserving information, ensuring that remaining features are vital and independent of each other.
+- PCA identifies a set of orthogonal axes, called principal components, that captures the maximum variance in the data. It assumes that variance = information.
+
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/20230420165431/Principal-Componenent-Analysisi.webp" height="300">
+
+- In the above picture, there is more variance along axes $PC_1$, so it is chosen as the final 1D space over $PC_2$.
+- Note that PCA does not give us a subset of the features that are useful. We don't know if area or radius was a more useful feature.
+
 ## Transformers
