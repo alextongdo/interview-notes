@@ -93,9 +93,9 @@ w_{1} & w_{2} & w_{3}
 P(Y|X)=\frac{P(X|Y)P(Y)}{P(X)}
 ```
 - By comparing the probabilities of the two labels, we can decide by choosing the higher one. Since $P(X)$ appears in both, we can just ignore it for our comparison.
-```math
-P(Y=0|X_1=x_1~\text{and}~X_2=x_2)\propto\frac{P(X_1=x_1~\text{and}~X_2=x_2|Y=0)P(Y=0)}{\sout{P(X)}}
-```
+~~```math
+P(Y=0|X_1=x_1~\text{and}~X_2=x_2)\propto\frac{P(X_1=x_1~\text{and}~X_2=x_2|Y=0)P(Y=0)}{P(X)}
+```~~
 ```math
 P(Y=1|X_1=x_1~\text{and}~X_2=x_2)\propto\frac{P(X_1=x_1~\text{and}~X_2=x_2|Y=1)P(Y=1)}{\sout{P(X)}}
 ```
