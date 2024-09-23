@@ -84,4 +84,28 @@ w_{1} & w_{2} & w_{3}
 - In the above picture, there is more variance along axes $PC_1$, so it is chosen as the final 1D space over $PC_2$.
 - Note that PCA does not give us a subset of the features that are useful. We don't know if area or radius was a more useful feature.
 
+## Naive Bayes
+
+- Let's say we want to find a classifier that can predict a label $Y\in\{0,1\}$ given some features $X_1,~X_2$.
+- From a probabilistic perspective, we can say we want to estimate $P(Y=y|X_1=x_1~\text{and}~X_2=x_2)$ where $x_1$ and $x_2$ are our features for this sample.
+- Using Bayes' theorem (below), we can express $P(Y|X)$ in terms of $P(X|Y),~P(Y),~P(X)$ which we can compute by looking at the probabilites in our training dataset.
+```math
+P(Y|X)=\frac{P(X|Y)P(Y)}{P(X)}
+```
+- By comparing the probabilities of the two labels, we can decide by choosing the higher one. Since $P(X)$ appears in both, we can just ignore it for our comparison.
+```math
+P(Y=0|X_1=x_1~\text{and}~X_2=x_2)\propto\frac{P(X_1=x_1~\text{and}~X_2=x_2|Y=0)P(Y=0)}{\sout{P(X)}}
+```
+```math
+P(Y=1|X_1=x_1~\text{and}~X_2=x_2)\propto\frac{P(X_1=x_1~\text{and}~X_2=x_2|Y=1)P(Y=1)}{\sout{P(X)}}
+```
+- However, note that we need $P(X_1=x_1~\text{and}~X_2=x_2|Y=y)$ which is based on the probability we find in the dataset. If there aren't many occurrences of this case to count, the probability becomes unreliable.
+- Thus, Naive Bayes assumes that each feature $X_1,~X_2$ are **independent** of each other, just as two coin flips may be independent of each other (**Big assumption!**). This separates the conditional so that we have a larger sample size for each.
+```math
+P(X_1=x_1~\text{and}~X_2=x_2|Y=y)=P(X_1=x_1|Y=y)P(X_1=x_1|Y=y)
+```
+- As expected, we also assume that the amount of training data is sufficient to model the probability properly.
+
+## Decision Tree
+
 ## Transformers
