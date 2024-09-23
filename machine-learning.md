@@ -93,11 +93,11 @@ w_{1} & w_{2} & w_{3}
 P(Y|X)=\frac{P(X|Y)P(Y)}{P(X)}
 ```
 - By comparing the probabilities of the two labels, we can decide by choosing the higher one. Since $P(X)$ appears in both, we can just ignore it for our comparison.
-~~```math
-P(Y=0|X_1=x_1~\text{and}~X_2=x_2)\propto\frac{P(X_1=x_1~\text{and}~X_2=x_2|Y=0)P(Y=0)}{P(X)}
-```~~
 ```math
-P(Y=1|X_1=x_1~\text{and}~X_2=x_2)\propto\frac{P(X_1=x_1~\text{and}~X_2=x_2|Y=1)P(Y=1)}{\sout{P(X)}}
+P(Y=0|X_1=x_1~\text{and}~X_2=x_2)\propto\frac{P(X_1=x_1~\text{and}~X_2=x_2|Y=0)P(Y=0)}{\enclose{horizontalstrike}{P(X)}}
+```
+```math
+P(Y=1|X_1=x_1~\text{and}~X_2=x_2)\propto\frac{P(X_1=x_1~\text{and}~X_2=x_2|Y=1)P(Y=1)}{\enclose{horizontalstrike}{P(X)}}
 ```
 - However, note that we need $P(X_1=x_1~\text{and}~X_2=x_2|Y=y)$ which is based on the probability we find in the dataset. If there aren't many occurrences of this case to count, the probability becomes unreliable.
 - Thus, Naive Bayes assumes that each feature $X_1,~X_2$ are **independent** of each other, just as two coin flips may be independent of each other (**Big assumption!**). This separates the conditional so that we have a larger sample size for each.
