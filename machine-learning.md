@@ -90,7 +90,7 @@ w_{1} & w_{2} & w_{3}
 - From a probabilistic perspective, we can say we want to estimate $P(Y=y|X_1=x_1~\text{and}~X_2=x_2)$ where $x_1$ and $x_2$ are our features for this sample.
 - Using Bayes' theorem (below), we can express $P(Y|X)$ in terms of $P(X|Y),~P(Y),~P(X)$ which we can compute by looking at the probabilites in our training dataset.
 ```math
-P(Y|X)=\frac{P(X|Y)P(Y)}{P(X)}
+P(Y|X)=\frac{#strike(fjdkslfjds)P(X|Y)P(Y)}{P(X)}
 ```
 - By comparing the probabilities of the two labels, we can decide by choosing the higher one. Since $P(X)$ appears in both, we can just ignore it for our comparison.
 ```math
