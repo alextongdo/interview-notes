@@ -102,10 +102,20 @@ P(Y=1|X_1=x_1~\text{and}~X_2=x_2)\propto\frac{P(X_1=x_1~\text{and}~X_2=x_2|Y=1)P
 - However, note that we need $P(X_1=x_1~\text{and}~X_2=x_2|Y=y)$ which is based on the probability we find in the dataset. If there aren't many occurrences of this case to count, the probability becomes unreliable.
 - Thus, Naive Bayes assumes that each feature $X_1,~X_2$ are **independent** of each other, just as two coin flips may be independent of each other (**Big assumption!**). This separates the conditional so that we have a larger sample size for each.
 ```math
-P(X_1=x_1~\text{and}~X_2=x_2|Y=y)=P(X_1=x_1|Y=y)P(X_1=x_1|Y=y)
+P(X_1=x_1~\text{and}~X_2=x_2|Y=y)=P(X_1=x_1|Y=y)P(X_2=x_2|Y=y)
 ```
 - As expected, we also assume that the amount of training data is sufficient to model the probability properly.
 
 ## Decision Tree
+
+<img src="./assets/videoplayback.png" height="300">
+
+- Decision trees contain an "if-else" decision at every non-leaf node, traversing down the tree to classify new samples. Note that this can even model a non-linear relationship.
+- They are created by recursively creating new splits/decisions, starting from the root node.
+- At every split, we want to maximize information gain, ending when a leaf node contains only 1 class (although this doesn't necessarily have to be true and majority vote can be used).
+- By looking at the entropy (randomness) of the points on each side of the decision, we can (greedily) find the best decision out of all possible features and values that reduces randomness.
+  - Can use different heuristics for this like entropy or **Gini Index**.
+- For regression problems, entropy reduction is replaced with variance reduction, and when we reach a leaf node, we just average the labels contained (which have low variance so they won't be very different).
+- [[Additional Video](https://www.youtube.com/watch?v=ZVR2Way4nwQ)]
 
 ## Transformers
