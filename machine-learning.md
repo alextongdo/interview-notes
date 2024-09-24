@@ -1,7 +1,7 @@
 # Machine Learning Basics
 
 ## K-Nearest Neigbors (KNN)
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/20231207103856/KNN-Algorithm-(1).png" height="300">
+<img src="./assets/KNN-Algorithm-(1)-2.png" height="300">
 
 - Given a set of labeled data points, when encountering an unlabeled test data point, we can accurately label it by finding its "nearest neighbor" in the points we already know.
 - Consider top k nearest neighbors when labeling, majority vote.
@@ -49,13 +49,13 @@ w_{1} & w_{2} & w_{3}
 - **Dropout**
 
 ## Support Vector Machine (SVM)
-<img src="https://miro.medium.com/v2/resize:fit:1400/1*ZpkLQf2FNfzfH4HXeMw4MQ.png" height="300">
+<img src="./assets/1*ZpkLQf2FNfzfH4HXeMw4MQ.png" height="300">
 
 - Uses labeled points in an $n$-dimensional feature space to find a hyperplane or classification boundary that maximizes the margin to the closest points of each class.
 - Similar to linear classification with $\hat{y}_i=\text{sign}(w^Tx_i-b)$ and classes 1/-1.
 - With a hard constraint $y_i(\hat{y}_i)=y_i(w^Tx_i-b)\geq1$, no points can be on the wrong side of the line. If we want to allow this, we adopt a softer constraint $y_i(w^Tx_i-b)\geq1-\epsilon$.
 
-<img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*mCwnu5kXot6buL7jeIafqQ.png" height="300">
+<img src="./assets/1*mCwnu5kXot6buL7jeIafqQ.webp" height="300">
 
 - SVMs can also model a non-linear relationship by performing a non-linear transformation $\phi(x,y)$ of the original features.
 - In the above picture, each point on a flat surface was mapped onto a curved surface. $\phi(x,y)=x^2+y^2$
@@ -75,7 +75,7 @@ w_{1} & w_{2} & w_{3}
 - The goal with PCA is to reduce high dimensional features into a lower dimension while preserving information, ensuring that remaining features are vital and independent of each other.
 - PCA identifies a set of orthogonal axes, called principal components, that captures the maximum variance in the data. It assumes that variance = information.
 
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/20230420165431/Principal-Componenent-Analysisi.webp" height="300">
+<img src="./assets/Principal-Componenent-Analysisi.webp" height="300">
 
 - In the above picture, there is more variance along axes $PC_1$, so it is chosen as the final 1D space over $PC_2$.
 - Note that PCA does not give us a subset of the features that are useful. We don't know if area or radius was a more useful feature.
