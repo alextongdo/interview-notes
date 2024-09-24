@@ -43,10 +43,6 @@ w_{1} & w_{2} & w_{3}
 ## Multi-layer Perceptron (MLP)
 - Similar to linear regression, but a non-linear activation is added between layers to model non-linear relationships.
 
-## Bias-Variance Tradeoff
-- Overfitting is when a model achieves low bias, high variance.
-- Underfitting is when a model achieves high bias, low variance.
-
 ## Regularization
 - Ridge regression (**L2 norm**) is when we add a penalty term to the loss that is the square of the magnitude of coefficients. This results in coefficients that tend towards a range of 0 - 1.
 - Lasso regression (**L1 norm**) is when we add a penalty term to the loss that is the absolute value of the magnitude of coefficients.  This results in sparse coefficients.
@@ -117,5 +113,16 @@ P(X_1=x_1~\text{and}~X_2=x_2|Y=y)=P(X_1=x_1|Y=y)P(X_2=x_2|Y=y)
   - Can use different heuristics for this like entropy or **Gini Index**.
 - For regression problems, entropy reduction is replaced with variance reduction, and when we reach a leaf node, we just average the labels contained (which have low variance so they won't be very different).
 - [[Additional Video](https://www.youtube.com/watch?v=ZVR2Way4nwQ)]
+
+## Bias-Variance Tradeoff
+- Overfitting is when a model achieves low bias, high variance.
+- Underfitting is when a model achieves high bias, low variance.
+
+## Bagging & Boosting
+- We can use a technique called **bagging** to reduce variance. Bagging is when we sample $T$ new datasets from the original dataset (usually with replacement), train $T$ models on the new datasets, and aggregate $T$ test-time predictions.
+  - When the models are all decision trees, it is called **random forest**.
+- We can use a technique called **boosting** to reduce bias. Boosting is when we train singular models on the entire dataset, one by one. After each model is trained, we look at its misclassifications in the training dataset, and weight these samples more for the next model. At the end we aggregate all of the predictions of the models, which are also reweighted.
+  - The above technique is called **AdaBoost**, which reweights samples based on an exponential function. **Gradient boosting** instead uses the gradients of a sample for reweighting.
+  - [[Additional Video](https://www.youtube.com/watch?v=MIPkK5ZAsms)]
 
 ## Transformers
