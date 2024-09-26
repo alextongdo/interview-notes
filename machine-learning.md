@@ -49,13 +49,13 @@ w_{1} & w_{2} & w_{3}
 - **Dropout**
 
 ## Support Vector Machine (SVM)
-<img src="./assets/1*ZpkLQf2FNfzfH4HXeMw4MQ.png" height="300">
+<img src="./assets/1ZpkLQf2FNfzfH4HXeMw4MQ.png" height="300">
 
 - Uses labeled points in an $n$-dimensional feature space to find a hyperplane or classification boundary that maximizes the margin to the closest points of each class.
 - Similar to linear classification with $\hat{y}_i=\text{sign}(w^Tx_i-b)$ and classes 1/-1.
 - With a hard constraint $y_i(\hat{y}_i)=y_i(w^Tx_i-b)\geq1$, no points can be on the wrong side of the line. If we want to allow this, we adopt a softer constraint $y_i(w^Tx_i-b)\geq1-\epsilon$.
 
-<img src="./assets/1*mCwnu5kXot6buL7jeIafqQ.webp" height="300">
+<img src="./assets/1mCwnu5kXot6buL7jeIafqQ.webp" height="300">
 
 - SVMs can also model a non-linear relationship by performing a non-linear transformation $\phi(x,y)$ of the original features.
 - In the above picture, each point on a flat surface was mapped onto a curved surface. $\phi(x,y)=x^2+y^2$
