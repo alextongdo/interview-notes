@@ -124,5 +124,3 @@ P(X_1=x_1~\text{and}~X_2=x_2|Y=y)=P(X_1=x_1|Y=y)P(X_2=x_2|Y=y)
 - We can use a technique called **boosting** to reduce bias. Boosting is when we train singular models on the entire dataset, one by one. After each model is trained, we look at its misclassifications in the training dataset, and weight these samples more for the next model. At the end we aggregate all of the predictions of the models, which are also reweighted.
   - The above technique is called **AdaBoost**, which reweights samples based on an exponential function. **Gradient boosting** instead uses the gradients of a sample for reweighting.
   - [[Additional Video](https://www.youtube.com/watch?v=MIPkK5ZAsms)]
-
-## Transformers

@@ -14,6 +14,12 @@
 - [Bias-Variance Tradeoff](https://github.com/alextongdo/interview-notes/blob/main/machine-learning.md#bias-variance-tradeoff)
 - [Bagging & Boosting]()
 
+## Natural Language Processing (NLP)
+
+## Computer Vision
+
+## Reinforcement Learning (RL)
+
 ## Data Structures & Algorithms
 
 ## Quant
