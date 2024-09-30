@@ -1,5 +1,5 @@
 # Natural Language Processing (NLP)
 
-# Embeddings?
+## Embeddings?
 
 ## Recurrent Neural Network (RNN)
