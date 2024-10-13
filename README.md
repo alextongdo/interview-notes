@@ -17,8 +17,11 @@
 ## Natural Language Processing (NLP)
 
 ## Computer Vision
+- [Convolutional Neural Network (CNN)]()
 
 ## Reinforcement Learning (RL)
+
+## System Design
 
 ## Data Structures & Algorithms
 
