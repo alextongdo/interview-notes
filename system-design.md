@@ -1,6 +1,10 @@
 # System Design
 
+## Docker
+- Containerization packages a piece of software's source code, dependencies, etc...
+
 ## Kubernetes
+- Kubernetes allows for the automatic scaling up and down of Docker images to match the dynamic needs of an application.
 
 ## Azure DevOps
 - Provides a suite of tools used for developing some software from ideation all the way to production.
