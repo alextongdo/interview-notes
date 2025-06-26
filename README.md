@@ -12,7 +12,9 @@
 - [Naive Bayes](https://github.com/alextongdo/interview-notes/blob/main/machine-learning.md#naive-bayes)
 - [Decision Tree](https://github.com/alextongdo/interview-notes/blob/main/machine-learning.md#decision-tree)
 - [Bias-Variance Tradeoff](https://github.com/alextongdo/interview-notes/blob/main/machine-learning.md#bias-variance-tradeoff)
-- [Bagging & Boosting]()
+- [Bagging & Boosting](https://github.com/alextongdo/interview-notes/blob/main/machine-learning.md#bagging--boosting)
+
+### [Research Papers]()
 
 ## Natural Language Processing (NLP)
 
@@ -24,5 +26,6 @@
 ## System Design
 
 ## Data Structures & Algorithms
+- [Quickstart]()
 
 ## Quant
