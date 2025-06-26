@@ -14,18 +14,18 @@
 - [Bias-Variance Tradeoff](https://github.com/alextongdo/interview-notes/blob/main/machine-learning.md#bias-variance-tradeoff)
 - [Bagging & Boosting](https://github.com/alextongdo/interview-notes/blob/main/machine-learning.md#bagging--boosting)
 
-### [Research Papers]()
+### [Research Papers](https://github.com/alextongdo/interview-notes/tree/main/machine-learning-papers)
 
-## Natural Language Processing (NLP)
+<!-- ## Natural Language Processing (NLP)
 
 ## Computer Vision
 - [Convolutional Neural Network (CNN)]()
 
 ## Reinforcement Learning (RL)
 
-## System Design
+## System Design -->
 
 ## Data Structures & Algorithms
-- [Quickstart]()
+- [Quickstart](https://github.com/alextongdo/interview-notes/blob/main/data-structures-algorithms.md)
 
-## Quant
+<!-- ## Quant -->
